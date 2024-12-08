@@ -3,14 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogisTrack.Domain", "src\LogisTrack.Domain\LogisTrack.Domain.csproj", "{8D76FA7F-E34E-4052-8AA3-08E30C6EB821}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogisTrack.Domain.Tests", "tests\LogisTrack.Domain.Tests\LogisTrack.Domain.Tests.csproj", "{2324F3FC-C158-46C6-B650-ADCBF0638F07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D76FA7F-E34E-4052-8AA3-08E30C6EB821}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D76FA7F-E34E-4052-8AA3-08E30C6EB821}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D76FA7F-E34E-4052-8AA3-08E30C6EB821}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D76FA7F-E34E-4052-8AA3-08E30C6EB821}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2324F3FC-C158-46C6-B650-ADCBF0638F07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2324F3FC-C158-46C6-B650-ADCBF0638F07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2324F3FC-C158-46C6-B650-ADCBF0638F07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2324F3FC-C158-46C6-B650-ADCBF0638F07}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 	EndGlobalSection
 EndGlobal
