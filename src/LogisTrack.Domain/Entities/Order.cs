@@ -4,21 +4,20 @@ namespace LogisTrack.Domain.Entities;
 
 public class Order : Entity
 {
-    private IList<Occurrence> _ocurrences;
+    private readonly IList<Occurrence> _ocurrences;
 
     public Order(Address destinationAddress)
     {
         Status = EOrderStatus.Pending;
         CreatedAt = DateTime.Now;
-        _ocurrences = new List<Occurrence>();
         DestinationAddress = destinationAddress;
-        DestinationAddressId = destinationAddress.Id;
+        _ocurrences = [];
     }
 
     public EOrderStatus Status { get; private set; }
     public DateTime CreatedAt { get; private set; }
     public DateTime? UpdatedAt { get; private set; }
-    public IReadOnlyCollection<Occurrence> Occurrences { get { return _ocurrences.ToArray(); } }
+    public IReadOnlyCollection<Occurrence> Occurrences => [.. _ocurrences];
 
     protected int DestinationAddressId { get; private set; }
     public Address DestinationAddress { get; private set; } = null!;
