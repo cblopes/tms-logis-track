@@ -7,13 +7,15 @@ public class Client : Entity
         string lastName,
         string document,
         string phone,
-        string email)
+        string email,
+        Address address)
     {
         FirstName = firstName;
         LastName = lastName;
         Document = document;
         Phone = phone;
         Email = email;
+        Address = address;
     }
 
     public string FirstName { get; private set; }
@@ -27,7 +29,6 @@ public class Client : Entity
     
     public void AssignAddress(Address address)
     {
-        AddressId = address.Id;
         Address = address;
     }
 }
